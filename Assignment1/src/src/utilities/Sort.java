@@ -5,5 +5,15 @@ package src.utilities;
 
 public class Sort {
 
-
+    //Bubble Sort create function from the video.
+    
+    //Inseration Sort create function from the video.
+    
+    //Selection Sort create function from the video.
+    
+    //Merge Sort create function from the video.
+    
+    //Quick Sort create function from the video.
+    
+    //Radix Sort create function from the video.
 }

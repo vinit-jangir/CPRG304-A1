@@ -1,5 +1,7 @@
 package src.appDomain;
 
+import src.shapes.*;
+
 public class AppDriver
 {
 
@@ -22,6 +24,22 @@ public class AppDriver
 
 		// refer to demo03 OfficeManager.java on how to create specific
 		// objects using reflection from a String
+            
+            //Example Shapes
+            Cone cone = new Cone(4,3);  
+            SquarePrism prism = new SquarePrism(2,3);
+            
+            //Example Volume Cacluations:
+            System.out.println("Cone Volume: " + cone.calcVolume());
+            System.out.println("SquarePrism Volume: " + prism.calcVolume());
+            
+            Cylinder cylinder = new Cylinder(2,4);
+            
+            //Shapes and Prism are working with height comparison.
+            System.out.println(cone.compareTo(cylinder));
+            
+            //Shape volume works.
+            System.out.println(cone.baseAreaComparator(cylinder));
 	}
 
 }

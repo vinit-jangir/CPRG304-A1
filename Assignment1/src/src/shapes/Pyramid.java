@@ -2,9 +2,7 @@ package src.shapes;
 
 public class Pyramid extends Shape
 {
-    private double side;
-    private double height;
-    
+    private double side;    
 
     public Pyramid(double height, double side) {
         super(height);

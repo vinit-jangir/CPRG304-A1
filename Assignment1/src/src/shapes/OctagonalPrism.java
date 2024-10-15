@@ -2,8 +2,6 @@ package src.shapes;
 
 public class OctagonalPrism extends Prism
 {
-    private double side;
-    private double height;
     
     public OctagonalPrism(double height, double side) {
         super(height, side);

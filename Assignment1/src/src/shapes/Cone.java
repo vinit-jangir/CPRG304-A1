@@ -3,7 +3,6 @@ package src.shapes;
 public class Cone extends Shape
 {
     private double radius;
-    private double height;
 
     public Cone(double height, double radius) {
         super(height);
@@ -18,5 +17,10 @@ public class Cone extends Shape
     @Override
     public double calcVolume(){
         return (1.0 / 3.0) * Math.PI * radius * radius * height;
+    }
+    
+    @Override
+    public int compare(Shape s1, Shape s2){
+                return Double.compare(s1.calcBaseArea(), s2.calcBaseArea());
     }
 }

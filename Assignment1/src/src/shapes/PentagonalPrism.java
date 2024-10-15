@@ -2,8 +2,6 @@ package src.shapes;
 
 public class PentagonalPrism extends Prism
 {
-    private double side;
-    private double height;
     
     public PentagonalPrism(double height, double side) {
         super(height, side);
