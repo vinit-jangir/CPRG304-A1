@@ -1,8 +1,10 @@
-package shapes;
+package src.shapes;
 
 public class Pyramid extends Shape
 {
     private double side;
+    private double height;
+    
 
     public Pyramid(double height, double side) {
         super(height);

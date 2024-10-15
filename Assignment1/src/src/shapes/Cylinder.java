@@ -1,7 +1,8 @@
-package shapes;
+package src.shapes;
 
 public class Cylinder extends Shape{
     private double radius;
+    private double height;
     
     public Cylinder(double height, double radius){
         super(height);

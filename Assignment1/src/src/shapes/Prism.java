@@ -1,29 +1,33 @@
-package shapes;
+package src.shapes;
 
+//Prism Interface.
 
-public abstract class Shape implements Comparable<Shape>{
+public abstract class Prism implements Comparable<Prism>{
     private double height;
+    private double side;
 
-    public Shape(double height) {
+    public Prism(double height, double side) {
         this.height = height;
+        this.side = side;
     }
 
     public double getHeight() {
         return height;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
+    public double getSide() {
+        return side;
     }
     
     public abstract double calcBaseArea();
     public abstract double calcVolume();
     
     @Override
-    public int compareTo(Shape others){
+    public int compareTo(Prism others){
        if (this.getHeight() > others.getHeight()) return 1;
        else if (this.getHeight() < others.getHeight()) return -1;
-       else return 0; 
+       else return 0;
     }
-}
 
+    
+}

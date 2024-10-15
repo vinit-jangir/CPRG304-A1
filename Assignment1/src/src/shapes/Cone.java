@@ -1,8 +1,9 @@
-package shapes;
+package src.shapes;
 
 public class Cone extends Shape
 {
     private double radius;
+    private double height;
 
     public Cone(double height, double radius) {
         super(height);

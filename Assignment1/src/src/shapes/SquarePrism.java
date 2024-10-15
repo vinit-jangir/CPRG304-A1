@@ -1,7 +1,10 @@
-package shapes;
+package src.shapes;
 
 public class SquarePrism extends Prism
 {
+    private double side;
+    private double height;
+    
     public SquarePrism(double height, double side) {
         super(height, side);
     }

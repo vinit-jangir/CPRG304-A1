@@ -1,4 +1,4 @@
-package appDomain;
+package src.appDomain;
 
 public class AppDriver
 {

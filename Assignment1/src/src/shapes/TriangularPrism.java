@@ -1,7 +1,10 @@
-package shapes;
+package src.shapes;
 
 public class TriangularPrism extends Prism
 {
+    private double side;
+    private double height;
+    
     public TriangularPrism(double height, double side) {
         super(height, side);
     }
