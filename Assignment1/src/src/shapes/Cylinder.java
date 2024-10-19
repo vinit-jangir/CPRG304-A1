@@ -17,4 +17,9 @@ public class Cylinder extends Shape{
     public double calcVolume(){
         return Math.PI * radius * radius * height;
     }
+    
+    @Override
+    public String toString(){
+        return "Cylinder ";
+    }
 }

@@ -19,4 +19,9 @@ public class OctagonalPrism extends Prism
     public double calcVolume(){
         return base_area * height;
     }
+    
+    @Override
+    public String toString(){
+        return "Octagonal Prism ";
+    }
 }

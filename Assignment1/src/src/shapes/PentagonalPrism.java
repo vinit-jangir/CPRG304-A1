@@ -20,4 +20,9 @@ public class PentagonalPrism extends Prism
     public double calcVolume(){
         return base_area * height;
     }
+    
+    @Override
+    public String toString(){
+        return "Pentagonal Prism ";
+    }
 }

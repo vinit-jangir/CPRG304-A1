@@ -1,45 +1,35 @@
 package src.appDomain;
 
 import src.shapes.*;
+import src.utilities.Reader;
+import src.utilities.Sort;
 
-public class AppDriver
-{
+public class AppDriver {
 
-	public static void main( String[] args )
-	{
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        
+        Cone cone = new Cone(4,3);
+        Cylinder cy = new Cylinder(5,7);
+        
+        System.out.println(cone.compareTo(cy));
+        
+        System.out.println(cone.compare(cone, cy));
+        
+        // Define the paths to your shape files
+        String[] files = {
+            "src/res/shapes1.txt",
+            "src/res/shapes2.txt",
+            "src/rese/shapes3.txt"
+        };
 
-		// refer to demo001 BasicFileIO.java for a simple example on how to
-		// read data from a text file
+        // Read shapes from the specified files
+        Shape[] shapes = Reader.readShapesFromFiles(files);
 
-		// refer to demo01 Test.java for an example on how to parse command
-		// line arguments and benchmarking tests
-
-		// refer to demo02 Student.java for comparable implementation, and
-		// NameCompare.java or GradeCompare for comparator implementations
-
-		// refer to demo02 KittySort.java on how to use a custom sorting
-		// algorithm on a list of comparables to sort using either the
-		// natural order (comparable) or other orders (comparators)
-
-		// refer to demo03 OfficeManager.java on how to create specific
-		// objects using reflection from a String
-            
-            //Example Shapes
-            Cone cone = new Cone(4,3);  
-            SquarePrism prism = new SquarePrism(2,3);
-            
-            //Example Volume Cacluations:
-            System.out.println("Cone Volume: " + cone.calcVolume());
-            System.out.println("SquarePrism Volume: " + prism.calcVolume());
-            
-            Cylinder cylinder = new Cylinder(2,4);
-            
-            //Shapes and Prism are working with height comparison.
-            System.out.println(cone.compareTo(cylinder));
-            
-            //Shape volume works.
-            System.out.println(cone.baseAreaComparator(cylinder));
-	}
-
+        // Print the shapes (or do something with them)
+        for (Shape shape : shapes) {
+            if (shape != null) {
+                System.out.println(shape); // Ensure your Shape class has a toString() method for meaningful output
+            }
+        }
+    }
 }
