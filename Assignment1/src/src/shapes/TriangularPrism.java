@@ -1,10 +1,13 @@
 package src.shapes;
 
-public class TriangularPrism extends Prism
+public class TriangularPrism extends Shape
 {
 
+    private double side;
+    
     public TriangularPrism(double height, double side) {
-        super(height, side);
+        super(height);
+        this.side = side;
     }
     
     //formaula to calculate base.
@@ -19,9 +22,9 @@ public class TriangularPrism extends Prism
     public double calcVolume(){
         return base_area * height;
     }
-    
+
     @Override
     public String toString(){
-        return "Triangular Prism ";
+        return "TriangularPrism [height: " + getHeight() + ", side: " + side + "] ";
     }
 }

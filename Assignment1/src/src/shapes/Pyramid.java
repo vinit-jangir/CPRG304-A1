@@ -18,9 +18,9 @@ public class Pyramid extends Shape
     public double calcVolume(){
         return (1.0 / 3.0) * side * side * height;
     } 
-    
+
     @Override
     public String toString(){
-        return "Pyramid ";
+        return "Pyramid [height: " + getHeight() + "] ";
     }
 }

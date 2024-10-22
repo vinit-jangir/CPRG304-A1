@@ -20,6 +20,6 @@ public class Cylinder extends Shape{
     
     @Override
     public String toString(){
-        return "Cylinder ";
+        return "Cylinder [height: " + getHeight() + "] ";
     }
 }

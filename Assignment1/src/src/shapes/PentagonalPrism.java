@@ -1,10 +1,12 @@
 package src.shapes;
 
-public class PentagonalPrism extends Prism
+public class PentagonalPrism extends Shape
 {
+    private double side;
     
     public PentagonalPrism(double height, double side) {
-        super(height, side);
+        super(height);
+        this.side = side;
     }
     
     //Formaulae to be calculated
@@ -20,9 +22,9 @@ public class PentagonalPrism extends Prism
     public double calcVolume(){
         return base_area * height;
     }
-    
+
     @Override
     public String toString(){
-        return "Pentagonal Prism ";
+        return "PentagonalPrism [height: " + getHeight() + ", side: " + side + "] ";
     }
 }
