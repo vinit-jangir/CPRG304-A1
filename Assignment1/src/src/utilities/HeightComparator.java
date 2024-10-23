@@ -14,7 +14,7 @@ public class HeightComparator extends ShapeComparator {
 
     @Override
     public int compare(Shape shape1, Shape shape2) {
-        return Double.compare(shape1.getHeight(), shape2.getHeight());
+        return Double.compare(shape2.getHeight(), shape1.getHeight());
     }
     
 }

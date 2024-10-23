@@ -31,7 +31,6 @@ public class AppDriver {
         
         if (fileName.isEmpty() || compareCriteria.isEmpty() || sortMethod.isEmpty()) {
             System.out.println("Error: Missing required arguments.");
-            System.out.println("Usage: java -jar Sort.jar -ffile_name -tv -sb");
             return;
         }
 
@@ -94,7 +93,3 @@ public class AppDriver {
     }
 }
 
-
-
-
-//Need an big O on log(n) for - for giving the 1000th lines. and Space Complexity

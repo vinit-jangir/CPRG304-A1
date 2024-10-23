@@ -16,6 +16,6 @@ public class AreaComparator extends ShapeComparator {
     public int compare(Shape shape1, Shape shape2) {
         double area1 = shape1.calcBaseArea();
         double area2 = shape2.calcBaseArea();
-        return Double.compare(area1, area2);
+        return Double.compare(area2, area1); 
     }
 }
