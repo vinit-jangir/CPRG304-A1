@@ -10,17 +10,14 @@ public class TriangularPrism extends Shape
         this.side = side;
     }
     
-    //formaula to calculate base.
-    private double base_area = ((side * side * Math.sqrt(3)) / 4);
-    
     @Override
     public double calcBaseArea(){
-        return base_area;
+        return ((side * side * Math.sqrt(3)) / 4);
     }
     
     @Override
     public double calcVolume(){
-        return base_area * getHeight();
+        return ((side * side * Math.sqrt(3)) / 4) * getHeight();
     }
 
     @Override

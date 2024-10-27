@@ -1,11 +1,5 @@
 package src.shapes;
 
-import java.util.Comparator;
-
-//Remove Prism.java and put all the shapes here
-
-
-
 public abstract class Shape{
     protected double height;
 

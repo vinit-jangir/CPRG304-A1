@@ -89,11 +89,11 @@ public class AppDriver {
             shapeKind(shapes[0], compareCriteria, "First");
         }
 
-        for (int i = 0; i < shapes.length; i++) {
+        for (int i = 1; i <shapes.length - 2; i++) {
             shapeKind(shapes[i], compareCriteria, (i + 1) + "000-th");
             try {
                 // Delay of 1 second (1000 milliseconds) between each print
-                Thread.sleep(1000);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 System.out.println("An error occurred during sleep.");
             }
@@ -101,7 +101,7 @@ public class AppDriver {
 
         // Print the second-last element based on -t criteria
         if (shapes.length > 1) {
-            shapeKind(shapes[shapes.length - 2], compareCriteria, "Second-last");
+            shapeKind(shapes[shapes.length - 2], compareCriteria, "Second last");
         }
 
         // Print the last element based on -t criteria
@@ -123,10 +123,10 @@ public class AppDriver {
                 details = shape + " has a Height of: " + shape.getHeight();
                 break;
             case "a":
-                details = shape + " has a Area of: " + (double) shape.calcBaseArea();
+                details = shape + " has a Area of: " + shape.calcBaseArea();
                 break;
             case "v":
-                details = shape + " has a Volume of: " + (double) shape.calcVolume();
+                details = shape + " has a Volume of: " + shape.calcVolume();
                 break;
         }
         System.out.println(position + " element is: " + details);

@@ -9,18 +9,14 @@ public class PentagonalPrism extends Shape
         this.side = side;
     }
     
-    //Formaulae to be calculated
-    private double tan = Math.tan(Math.toRadians(54.0));    //tan(54 degree) -< we need to change it to radian.
-    protected double base_area = ((5 * side * side * tan) / 4);
-    
     @Override
     public double calcBaseArea(){
-        return base_area;
+        return ((5 * side * side * Math.tan(Math.toRadians(54.0))) / 4);
     }
     
     @Override
     public double calcVolume(){
-        return base_area * getHeight();
+        return ((5 * side * side * Math.tan(Math.toRadians(54.0))) / 4) * getHeight();
     }
 
     @Override
