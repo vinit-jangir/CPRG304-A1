@@ -2,7 +2,7 @@ package src.shapes;
 
 public class OctagonalPrism extends Shape
 {
-    private double side;
+    private double side = 0.0;
     public OctagonalPrism(double height, double side) {
         super(height);
         this.side = side;
@@ -17,13 +17,11 @@ public class OctagonalPrism extends Shape
     // Formula to calculate the volume (base area * height)
     @Override
     public double calcVolume() {
-        // Use getHeight() from Shape
         return calcBaseArea() * getHeight();  
     }
-
-
+    
     @Override
-    public String toString() {
-        return "OctagonalPrism [height: " + getHeight() + ", side: " + side + "] ";
+    public String toString(){
+        return "OctagonalPrism";
     }
 }

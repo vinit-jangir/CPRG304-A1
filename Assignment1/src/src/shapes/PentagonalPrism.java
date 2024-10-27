@@ -2,7 +2,7 @@ package src.shapes;
 
 public class PentagonalPrism extends Shape
 {
-    private double side;
+    private double side = 0.0;
     
     public PentagonalPrism(double height, double side) {
         super(height);
@@ -20,11 +20,11 @@ public class PentagonalPrism extends Shape
     
     @Override
     public double calcVolume(){
-        return base_area * height;
+        return base_area * getHeight();
     }
 
     @Override
     public String toString(){
-        return "PentagonalPrism [height: " + getHeight() + ", side: " + side + "] ";
+        return "PentagonalPrism";
     }
 }

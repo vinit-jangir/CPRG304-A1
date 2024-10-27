@@ -24,30 +24,30 @@ public class Reader {
                 String[] tokens = line.split(" ");
                 String shapeType = tokens[0];
                 double height = Double.parseDouble(tokens[1]);
-                double secondParam = Double.parseDouble(tokens[2]);
+                double radius = Double.parseDouble(tokens[2]);
 
                 // Based on the shape type, create the appropriate shape object
                 switch (shapeType) {
                     case "Cylinder":
-                        shapes[index] = new Cylinder(height, secondParam);
+                        shapes[index] = new Cylinder(height, radius);
                         break;
                     case "Cone":
-                        shapes[index] = new Cone(height, secondParam);
+                        shapes[index] = new Cone(height, radius);
                         break;
                     case "Pyramid":
-                        shapes[index] = new Pyramid(height, secondParam);
+                        shapes[index] = new Pyramid(height, radius);
                         break;
                     case "OctagonalPrism":
-                        shapes[index] = new OctagonalPrism(height, secondParam);
+                        shapes[index] = new OctagonalPrism(height, radius);
                         break;
                     case "SquarePrism":
-                        shapes[index] = new SquarePrism(height, secondParam);
+                        shapes[index] = new SquarePrism(height, radius);
                         break;
                     case "TriangularPrism":
-                        shapes[index] = new TriangularPrism(height, secondParam);
+                        shapes[index] = new TriangularPrism(height, radius);
                         break;
                     case "PentagonalPrism":
-                        shapes[index] = new PentagonalPrism(height, secondParam);
+                        shapes[index] = new PentagonalPrism(height, radius);
                         break;
                     default:
                         System.out.println("Unknown shape type: " + shapeType);

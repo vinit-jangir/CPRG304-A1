@@ -2,7 +2,7 @@ package src.shapes;
 
 public class SquarePrism extends Shape
 {
-    private double side;
+    private double side = 0.0;
     
     public SquarePrism(double height, double side) {
         super(height);
@@ -16,11 +16,11 @@ public class SquarePrism extends Shape
     
     @Override
     public double calcVolume(){
-        return side * side * height;
+        return side * side * getHeight();
     }
     
     @Override
     public String toString(){
-        return "SquarePrism [height: " + getHeight() + ", side: " + side + "] ";
+        return "SquarePrism";
     }
 }

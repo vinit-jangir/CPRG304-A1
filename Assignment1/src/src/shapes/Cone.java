@@ -21,6 +21,6 @@ public class Cone extends Shape
     
     @Override
     public String toString(){
-        return "Cone [height: " + getHeight() + "] ";
+        return "Cone";
     }
 }

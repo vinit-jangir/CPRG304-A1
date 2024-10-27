@@ -11,10 +11,9 @@ import src.shapes.Shape;
  * @author vinit.jangir
  */
 public class HeightComparator extends ShapeComparator {
-
     @Override
     public int compare(Shape shape1, Shape shape2) {
         return Double.compare(shape2.getHeight(), shape1.getHeight());
     }
-    
+
 }

@@ -3,7 +3,7 @@ package src.shapes;
 public class TriangularPrism extends Shape
 {
 
-    private double side;
+    private double side = 0.0;
     
     public TriangularPrism(double height, double side) {
         super(height);
@@ -20,11 +20,11 @@ public class TriangularPrism extends Shape
     
     @Override
     public double calcVolume(){
-        return base_area * height;
+        return base_area * getHeight();
     }
 
     @Override
     public String toString(){
-        return "TriangularPrism [height: " + getHeight() + ", side: " + side + "] ";
+        return "TriangularPrism";
     }
 }

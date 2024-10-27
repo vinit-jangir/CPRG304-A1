@@ -21,6 +21,6 @@ public class Pyramid extends Shape
 
     @Override
     public String toString(){
-        return "Pyramid [height: " + getHeight() + "] ";
+        return "Pyramid";
     }
 }
