@@ -78,8 +78,11 @@ public class AppDriver {
             case "q":
                 sorter.quickSort(shapes);
                 break;
+            case "g":
+                sorter.gnomeSort(shapes);
+                break;    
             default:
-                System.out.println("Error: Invalid sorting method. Use 'b', 's', 'i', 'm', 'q', or 'z'.");
+                System.out.println("Error: Invalid sorting method. Use 'b', 's', 'i', 'm', 'q', or 'g'.");
                 return;
         }
         long endTime = System.nanoTime();
